@@ -285,7 +285,7 @@ ol {
 .main-menu ul {
 	list-style: none;
 	text-align: right;
-	margin-left: 110px;
+	padding-left: 28px;
 }
 
 .main-menu ul li {
@@ -315,8 +315,8 @@ ol {
 }
 
 .main-menu ul li:nth-child(3) {
-	float: left;
 	padding: 4px;
+	margin-right: 40px;
 }
 
 .main-menu ul li:nth-child(4) {
@@ -1958,9 +1958,6 @@ ol {
 /* Medium Device : 1280px. */
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-	.main-menu ul {
-		margin-left: 110px;
-	}
 	.main-menu ul .search-btn {
 		margin-left: 62px;
 	}
@@ -1995,9 +1992,6 @@ ol {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	.top-social {
 		display: none;
-	}
-	.main-menu ul {
-		margin-left: 38px;
 	}
 	.single-slide h1 {
 		font-size: 105px;
