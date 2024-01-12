@@ -569,6 +569,8 @@ ol {
 	justify-content: center;
 	margin-bottom: 40px;
 	margin-top: -34px;
+	color:white;
+	font-size: 30px;
 }
 
 .single-features .feature-text h5 {
@@ -1303,7 +1305,7 @@ ol {
 }
 
 .inside-bg:after {
-	background-image: url(../img/classes/women-fitness.png);
+	background-image: url(img/classes/women-fitness.png);
 	position: absolute;
 	left: 50%;
 	top: 66px;

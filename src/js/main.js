@@ -4,17 +4,40 @@
   Version: 1.0
  ------------------------------------
  ====================================*/
+// import "jquery";
+// import 'bootstrap';
+// import 'magnific-popup';
+// import 'magnific-popup/dist/magnific-popup.css';
+// import 'magnific-popup/dist/jquery.magnific-popup.js';
+import "slicknav/dist/jquery.slicknav.min.js";
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel';
+import 'jquery-circle-progress';
+
+import '../css/magnific-popup.css';
+import './jquery.magnific-popup.min';
+
 
 'use strict';
 
+
 (function ($) {
-    
+
     /*------------------
         Preloader
     --------------------*/
     $(window).on('load', function () {
         $(".loader").fadeOut();
         $("#preloder").delay(400).fadeOut("slow");
+    });
+
+    /*------------------
+        Magnific Popup
+    --------------------*/
+    $(document).ready(function () {
+        $('.pop-up').magnificPopup({
+            type: 'iframe'
+        });
     });
 
     /*------------------
@@ -26,22 +49,22 @@
     });
 
     /*------------------
-		Navigation
-	--------------------*/
-	$(".mobile-menu").slicknav({
+        Navigation
+    --------------------*/
+    $(".mobile-menu").slicknav({
         prependTo: '#mobile-menu-wrap',
         allowParentLinks: true
     });
 
     /*------------------
-		Search Bar Wrap
-	--------------------*/
-    $(".search-trigger").on('click', function() {
+        Search Bar Wrap
+    --------------------*/
+    $(".search-trigger").on('click', function () {
         $(".search-bar-wrap").addClass("active");
-    });              
+    });
 
 
-    $(".search-close").on('click', function() {
+    $(".search-close").on('click', function () {
         $(".search-bar-wrap").removeClass("active");
     });
 
@@ -56,37 +79,30 @@
         nav: false,
         items: 1,
         dots: true,
-		mouseDrag: false,
+        mouseDrag: false,
         animateOut: 'fadeOut',
-    	animateIn: 'fadeIn',
+        animateIn: 'fadeIn',
         navText: ['<i class="flaticon-left-arrow-1"></i>', '<i class="flaticon-right-arrow-1"></i>'],
         smartSpeed: 1200,
         autoHeight: false,
         autoplay: true,
-        onInitialized: function() {
-        	var a = this.items().length;
+        onInitialized: function () {
+            var a = this.items().length;
             $("#snh-1").html("<span>1</span><span>" + a + "</span>");
         }
     });
 
     /*------------------
-        Magnific Popup
-    --------------------*/
-        $('.pop-up').magnificPopup({
-            type: 'iframe'
-        });
-
-    /*------------------
         About Counter Up
     --------------------*/
     $('.counter').each(function () {
-        $(this).prop('Counter',0).animate({
-        Counter: $(this).text()
+        $(this).prop('Counter', 0).animate({
+            Counter: $(this).text()
         }, {
             duration: 4000,
             easing: 'swing',
             step: function (now) {
-            $(this).text(Math.ceil(now));
+                $(this).text(Math.ceil(now));
             }
         });
     });
@@ -95,13 +111,13 @@
         Elements Counter UP
     --------------------*/
     $('.m-counter').each(function () {
-        $(this).prop('Counter',0).animate({
-        Counter: $(this).text()
+        $(this).prop('Counter', 0).animate({
+            Counter: $(this).text()
         }, {
             duration: 4000,
             easing: 'swing',
             step: function (now) {
-            $(this).text(Math.ceil(now));
+                $(this).text(Math.ceil(now));
             }
         });
     });
@@ -109,18 +125,18 @@
     /*------------------
         Barfiller
     --------------------*/
-    $('#bar1').barfiller({
-        barColor: '#233EDE',
-        duration: 2000
-    });
-    $('#bar2').barfiller({
-        barColor: '#233EDE',
-        duration: 2000
-    });
-    $('#bar3').barfiller({
-        barColor: '#233EDE',
-        duration: 2000
-    });
+    // $('#bar1').barfiller({
+    //     barColor: '#233EDE',
+    //     duration: 2000
+    // });
+    // $('#bar2').barfiller({
+    //     barColor: '#233EDE',
+    //     duration: 2000
+    // });
+    // $('#bar3').barfiller({
+    //     barColor: '#233EDE',
+    //     duration: 2000
+    // });
 
     /*------------------
         Accordin Active
@@ -136,33 +152,33 @@
     /*------------------
         Progress Loader
     --------------------*/
-	$('.circle-progress').each(function() {
-		var cpvalue = $(this).data("cpvalue");
-		var cpcolor = $(this).data("cpcolor");
-		var cpid 	= $(this).data("cpid");
+    $('.circle-progress').each(function () {
+        var cpvalue = $(this).data("cpvalue");
+        var cpcolor = $(this).data("cpcolor");
+        var cpid = $(this).data("cpid");
 
-		$(this).append('<div class="'+ cpid +'"></div><div class="progress-value"><span class="loader-percentage">'+ cpvalue +'%</span></div>');
+        $(this).append('<div class="' + cpid + '"></div><div class="progress-value"><span class="loader-percentage">' + cpvalue + '%</span></div>');
 
-		if (cpvalue < 100) {
+        if (cpvalue < 100) {
 
-			$('.' + cpid).circleProgress({
-				value: '0.' + cpvalue,
-				size: 174,
-				thickness: 16,
-				fill: cpcolor,
-				emptyFill: "rgba(0, 0, 0, 0)"
-			});
-		} else {
-			$('.' + cpid).circleProgress({
-				value: 1,
-				size: 174,
-				thickness: 16,
-				fill: cpcolor,
-				emptyFill: "rgba(0, 0, 0, 0)"
-			});
-		}
+            $('.' + cpid).circleProgress({
+                value: '0.' + cpvalue,
+                size: 174,
+                thickness: 16,
+                fill: cpcolor,
+                emptyFill: "rgba(0, 0, 0, 0)"
+            });
+        } else {
+            $('.' + cpid).circleProgress({
+                value: 1,
+                size: 174,
+                thickness: 16,
+                fill: cpcolor,
+                emptyFill: "rgba(0, 0, 0, 0)"
+            });
+        }
 
-	});
+    });
 
 
 })(jQuery);
