@@ -607,8 +607,9 @@ ol {
 	text-align: center;
 }
 
-.single-service img {
-	margin-bottom: 50px;
+.single-service span {
+	font-size: 80px;
+	color: #233dd7;
 }
 
 .single-service h5 {
@@ -618,6 +619,7 @@ ol {
 	letter-spacing: 1.5px;
 	text-transform: uppercase;
 	margin-bottom: 22px;
+	margin-top: 50px;
 }
 
 .single-service p {

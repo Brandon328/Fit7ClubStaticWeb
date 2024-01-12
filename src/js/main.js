@@ -1,14 +1,9 @@
 /* =================================
 ------------------------------------
-  TopGym | Fitness HTML Template
-  Version: 1.0
- ------------------------------------
- ====================================*/
-// import "jquery";
-// import 'bootstrap';
-// import 'magnific-popup';
-// import 'magnific-popup/dist/magnific-popup.css';
-// import 'magnific-popup/dist/jquery.magnific-popup.js';
+TopGym | Fitness HTML Template
+Version: 1.0
+------------------------------------
+====================================*/
 import "slicknav/dist/jquery.slicknav.min.js";
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel';
