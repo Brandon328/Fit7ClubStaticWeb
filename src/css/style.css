@@ -1306,18 +1306,6 @@ ol {
 	z-index: 1;
 }
 
-.inside-bg:after {
-	background-image: url(img/classes/women-fitness.png);
-	position: absolute;
-	left: 50%;
-	top: 66px;
-	width: 401px;
-	height: 722px;
-	content: "";
-	margin-left: -268px;
-	z-index: -1;
-}
-
 .single-fitness-feature {
 	margin-bottom: 50px;
 	overflow: hidden;
