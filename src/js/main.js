@@ -11,8 +11,8 @@ import "slicknav/dist/slicknav.min.css";
 import "slicknav/dist/jquery.slicknav.min.js";
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel';
-import './jquery.magnific-popup.js';
-import '../css/magnific-popup.css';
+// import './jquery.magnific-popup.js';
+// import '../css/magnific-popup.css';
 
 
 'use strict';
