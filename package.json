@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "jquery-circle-progress": "^1.2.2",
+    "magnific-popup": "^1.1.0",
     "owl.carousel": "^2.3.4",
     "slicknav": "^1.0.8"
   }
