@@ -4,6 +4,8 @@ TopGym | Fitness HTML Template
 Version: 1.0
 ------------------------------------
 ====================================*/
+import '../css/style.css';
+
 import "slicknav/dist/jquery.slicknav.min.js";
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel';
