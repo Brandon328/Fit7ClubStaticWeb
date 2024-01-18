@@ -31,11 +31,11 @@ import 'owl.carousel';
     /*------------------
         Magnific Popup
     --------------------*/
-    $(document).ready(function () {
-        $('.pop-up').magnificPopup({
-            type: 'iframe'
-        });
-    });
+    // $(document).ready(function () {
+    //     $('.pop-up').magnificPopup({
+    //         type: 'iframe'
+    //     });
+    // });
 
     /*------------------
         Background Set

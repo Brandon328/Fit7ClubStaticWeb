@@ -285,7 +285,7 @@ ol {
 .main-menu ul {
 	list-style: none;
 	text-align: right;
-	padding-left: 28px;
+	padding-left: 83px;
 }
 
 .main-menu ul li {
@@ -2335,6 +2335,12 @@ ol {
 	.search-bar-tablecell input {
 		width: 100%;
 		margin-bottom: 20px;
+	}
+	#slide-1{
+		background-position: 23% 0%;
+	}
+	#slide-2{
+		background-position: 66% 0%;
 	}
 }
 
