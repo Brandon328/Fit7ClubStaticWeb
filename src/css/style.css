@@ -316,7 +316,7 @@ ol {
 
 .main-menu ul li:nth-child(3) {
 	padding: 4px;
-	margin-right: 40px;
+	margin-right: 0px;
 }
 
 .main-menu ul li:nth-child(4) {
@@ -2124,12 +2124,15 @@ ol {
 	}
 	.slicknav_menu {
 		display: block;
-		background: transparent;
+		background: transparent !important;
 		padding: 0;
 	}
 	.slicknav_nav {
 		background: #222;
-		padding: 25px;
+		padding: 36px 0 !important;
+	}
+	.slicknav_nav ul{
+		margin: 0 !important;
 	}
 	.slicknav_btn {
 		margin: 5px 5px 30px;
