@@ -813,6 +813,9 @@ ol {
 	padding-left: 45px;
 	padding-right: 41px;
 	text-align: left;
+	background-size: 100% 100%;
+	margin: 0 auto;
+	max-width: 500px;
 }
 
 .member-sign-up .up-title {
@@ -2365,6 +2368,9 @@ ol {
 	}
 	.single-slide h1 {
 		font-size: 45px;
+	}
+	.member-sign-up{
+		background-size: cover;
 	}
 	.member-sign-up .member-signup-btn .primary-btn {
 		padding: 20px 42px;
